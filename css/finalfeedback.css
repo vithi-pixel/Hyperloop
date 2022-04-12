@@ -1,0 +1,41 @@
+body{
+
+    background: linear-gradient( #9933ff 0%, #ff66cc 100%) no-repeat;
+    background-blend-mode: screen;
+    /* object-fit: contain; */
+    object-fit: cover;
+    width:100vw;
+    height:100vh;
+}
+
+#feedback{
+    position: relative;
+    left:50px;
+    top:180px;
+    background-color: aliceblue;
+    height:300px;
+    width:500px;
+    border-radius: 20px;
+}
+
+h1{
+    color: #9933ff;
+}
+
+#submit-btn{
+
+    background: linear-gradient( #9933ff 0%, #ff66cc 100%) no-repeat;
+    color:white;
+    padding:10px;
+    border-radius:10px;
+}
+
+#homepage{
+    background: linear-gradient( #9933ff 0%, #ff66cc 100%) no-repeat;
+    color:white;
+    padding:10px;
+    position: relative;
+    top:40px;
+    left:700px;
+    border-radius:10px;
+}

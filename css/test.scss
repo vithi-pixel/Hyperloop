@@ -1,0 +1,166 @@
+/* Here's where I got these color combos
+https://designschool.canva.com/blog/100-color-combinations/
+*/
+
+//palette 1
+$papaya: #fe7a47;
+$granola: #f5ca99;
+$strawberry: #d8412f;
+
+//palette 2
+$peach: #ffccac;
+$raspberry: #ed5752;
+$strawberries: #cb0000;
+
+
+//palette 3
+$golden: #efb509;
+$lemondrop: #ffec5c;
+$ivory: #f1f3ce;
+
+//palette 4
+$turquoise: #31a2ac;
+$periwinkie: #d0e1f9;
+$aquamarine: #98dbc6;
+
+
+
+
+
+*, *::before, *::after{
+
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+
+}
+
+html{
+
+	height: 100%;
+	width: 100%;
+
+}
+
+body{
+
+	font-family: 'Open Sans', sans-serif;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	display: table;
+	margin: 0;
+
+}
+
+.container{
+
+	height: 50%;
+	width: 25%;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+
+	.title{
+
+		text-align: center; 
+		padding: 0 0 30px; 
+		margin: 0;
+
+	}
+
+	&:first-of-type{
+
+		background-color: $papaya;
+
+		.rail{ stroke: $granola; }
+
+		.progress{ stroke: $strawberry; }
+
+		.percentage{ color: $granola; }
+
+	}
+
+	&:nth-of-type(2){
+
+		background-color: $raspberry;
+
+		.rail{ stroke: $peach; }
+
+		.progress{ stroke: $strawberries; }
+
+		.icon{ color: $strawberries; }
+
+	}
+
+	&:nth-of-type(3){
+
+		background-color: $ivory;
+
+		.rail{ stroke: $lemondrop; }
+
+		.progress{ stroke: $golden; }
+
+		.icon{ color: $golden; }
+
+	}
+
+	&:nth-of-type(4){
+
+		background-color: $aquamarine;
+
+		.rail{ stroke: $periwinkie; }
+
+		.progress{ stroke: $turquoise; }
+
+		.icon{ color: $turquoise; }
+
+	}
+
+}
+
+.gauge-container{
+
+	display: inline-block;
+	position: relative;
+	width: 70%;
+
+	.gauge{
+
+		position: relative;
+		display: block;
+    
+    circle{ stroke-width: 15; }
+
+		.rail{ fill: transparent; }
+
+		.progress{
+
+			fill: transparent;
+			stroke-linecap: round;
+
+		}
+
+	}
+
+	.center{
+
+		display: inline-block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-weight: 300;
+    
+    &.percentage{ font-size: 2vw; }
+    
+    &.icon{ font-size: 3vw; }
+
+		.percentSymbol{ font-size: .8em; }
+		
+		.value{ font-size: 1.8em; }
+
+	}
+
+
+}

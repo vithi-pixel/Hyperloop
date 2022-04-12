@@ -1,0 +1,388 @@
+/* HEADER */
+#header-nav {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0;
+    border: 0;
+  }
+  
+  #logo-img {
+    background: url('../images/hsmf.png') no-repeat;
+    width: 200px;
+    height: 50px;
+  
+    margin: 10px 15px 10px 0;
+  }
+   
+  .search #Search {
+    font-size: 10px;
+  }
+  
+  .glyphicon glyphicon-user {
+      margin-bottom: 2px;
+  }
+  
+  #signIn {
+      font-size: 5px;
+  }
+  .travel :nth-child(4) {
+    margin-left: auto;
+  }
+  
+  div.travel {
+    background-color: #9bbedf;
+    border-radius: 50px;
+    position: relative;
+    left:30px;
+    
+  }
+  
+  
+  input.db {
+    color:black;
+    width: 75%;
+    height: 44px;
+    padding-top: 6%;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  input {
+    line-height: normal;
+  }
+  
+  .navbar-brand {
+    padding-top: 25px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    font-family: 'Lora', serif;
+    color: #557c3e;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+  }
+  .navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+  }
+  
+  #nav-list {
+    margin-top: 10px;
+  }
+  #nav-list a {
+    color: #2f0b70;
+    text-align: center;
+  }
+  #nav-list a:hover {
+    background: #E7E7E7;
+  }
+  #nav-list a span {
+    font-size: 1.8em;
+  }
+  
+  .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid #2f0b70;
+  }
+  .navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -30px;
+  }
+  #signin{
+    background-color: #2f0b70;
+  }
+  /* END HEADER */
+  
+
+.container1 {
+    background-color: #f3f1f5;
+    width: 1200px;
+  height: auto;
+  padding-bottom:50px;
+  border-radius: 20px;
+}
+.container-help {
+    background-color:#2f0b70;
+    width:2140px;
+    height:70px;
+    position:relative;
+    left:50px;
+    top: 50px;
+    color: #f8f8fa;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 15px;
+    
+}
+
+.container-logincard{
+    margin-top: 50px;
+    width:2140px;
+    height:150px;
+    background-color: #2f0b70;
+    position: relative;
+    left:50px;
+    top: 50px;
+    color: #f8f8fa;
+    font-size: 30px;
+    text-align: center;
+    padding:10px;
+
+}
+
+.container-faq {
+    margin-top: 50px;
+    width:2140px;
+    height:auto;
+    background-color: #2f0b70;
+    color: white;
+    font-size: 30px;
+    padding:10px;
+    text-align: center;
+    position:relative;
+    left:50px;
+    top:30px;
+}
+
+#Help{
+    color: #f3f1f5;
+    text-decoration: none;
+}
+
+#login-btn {
+    background-color: #f8f8fa;
+    width: 150px;
+    color: #2f0b70;
+    padding:10px;
+    border-radius:20px;
+    font-size:20px;
+    font-family: sans-serif;
+    position: relative;
+    top: 15px;
+}
+
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    color:white;
+}
+.faq-heading{
+    margin-top: 50px;
+    border-bottom:white;
+    padding: 20px 60px;
+}
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+.hr-line{
+  width: 60%;
+  margin: auto;
+  
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+    /* background-color: #eee; */
+    color:#ffffff;
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 60%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+}
+.faq-body{
+    margin: auto;
+    /* text-align: center; */
+   width: 50%; 
+   padding: auto;
+   
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-page:hover {
+    background-color: #f7f5fa;
+    color: #2f0b70;
+}
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+    padding: 0 18px;
+    background-color: #2f0b70;
+    display: none;
+    overflow: hidden;
+}
+.faq-page:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #ffffff;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+/*-*-*-*-*-* large devices only! *-*-*-*-*-*/
+@media (min-width:1200px) {
+   .container1 {
+    object-fit: contain;
+    object-fit: cover;
+    position: relative;
+    top: 50px;
+   }
+
+   .container-help{
+       height: 70px;
+       width: 1100px;
+       object-fit: contain;
+       object-fit: cover;
+
+   }
+   .container-logincard{
+    height: 140px;
+    object-fit: contain;
+    object-fit: cover;
+    width:1100px; 
+}
+.container-faq{
+    height:auto;
+    object-fit: contain;
+    object-fit: cover;
+    width:1100px; 
+}
+
+   
+
+}
+
+
+ /*-*-*-*-*-* Medium devices only! *-*-*-*-*-*/
+ @media (min-width: 992px) and (max-width: 1199px) {
+     .container1 {
+        object-fit: contain;
+        object-fit: cover;
+        width:auto;
+        margin: 20px;
+     }
+
+     .container-help{
+        height: 70px;
+        object-fit: contain;
+        object-fit: cover;
+        width:880px;
+        position: relative;
+        left: 40px;
+         
+    }
+    .container-logincard{
+        height: 140px;
+        object-fit: contain;
+        object-fit: cover;
+        width:880px; 
+        position: relative;
+        left: 40px;
+    }
+    .container-faq{
+        height:auto;
+        object-fit: contain;
+        object-fit: cover;
+        width: 880px;
+        position: relative;
+        left: 40px; 
+    }
+
+ }
+
+ /********** Small devices only **********/
+ @media (min-width: 768px) and (max-width: 991px) {
+
+    .container1 {
+        object-fit: contain;
+        object-fit: cover;
+        width:auto;
+        margin: 20px;
+    }
+
+    #logo-img {
+        background: url('../images/logo_small.png') no-repeat;
+        margin: 20px;
+      }
+    
+   .container-help{
+      height: 70px;
+        object-fit: contain;
+        object-fit: cover;
+        width:660px;  
+        position: relative;
+        left: 25px;
+  }
+
+  .container-logincard{
+    height:150px;
+    object-fit: contain;
+    object-fit: cover;
+    width: 660px;
+    position: relative;
+        left: 25px;
+}
+.container-faq{
+    height:auto;
+    object-fit: contain;
+    object-fit: cover;
+    width:660px; 
+    position: relative;
+        left: 25px;
+}
+
+ }
+ /*extra small*/
+    @media (max-width: 767px) {
+        .container1 {
+            object-fit: contain;
+            object-fit: cover;
+            width:650px; 
+            margin: 20px;
+            position: relative;
+            left:18px;
+        }
+
+        #logo-img {
+            background: url('../images/logo_xs.jpg') no-repeat;
+            margin-top: 20px;
+            margin-left: 30px;
+          }
+          
+        
+       .container-help{
+          height: 70px;
+            object-fit: contain;
+            object-fit: cover;
+            width:610px;  
+            position:relative;
+            left:20px;
+      }
+    
+      .container-logincard{
+        height:150px;
+        object-fit: contain;
+        object-fit: cover;
+        width: 610px;
+        position: relative;
+            left: 20px;
+    }
+    .container-faq{
+        height:auto;
+        object-fit: contain;
+        object-fit: cover;
+        width:610px; 
+        position: relative;
+            left: 20px;
+    }
+}
+
+
+
